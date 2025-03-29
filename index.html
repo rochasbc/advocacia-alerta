@@ -98,8 +98,18 @@
         }
         
         .signature p {
-            margin: 5px 0; /* Espaçamento reduzido entre os nomes */
+            margin: 5px 0;
             line-height: 1.3;
+        }
+
+        /* Estilo do link do WhatsApp */
+        .whatsapp-link {
+            color: inherit;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+        .whatsapp-link:hover {
+            color: #25D366; /* Verde do WhatsApp */
         }
         
         @media (max-width: 768px) {
@@ -129,7 +139,11 @@
             <div class="contact-content">
                 <h3 style="margin-top: 0; color: var(--ouro);">CANAIS OFICIAIS:</h3>
                 <p>📞 <strong>(11) 4238-6671</strong> (Telefone fixo)</p>
-                <p>📱 <strong>(11) 98228-2099</strong> (Dra. Rosangela - WhatsApp)</p>
+                <p><a href="https://wa.me/5511982282099?text=Dúvidas%20sobre%20a%20fraude" 
+                      target="_blank" 
+                      class="whatsapp-link">
+                   📱 <strong>(11) 98228-2099</strong> (Dra. Rosangela - WhatsApp)
+                </a></p>
                 <p>✉ <strong>contato@advocacianegrao.com.br</strong> (E-mail oficial)</p>
             </div>
         </div>
