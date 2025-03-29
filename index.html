@@ -31,23 +31,24 @@
             box-shadow: 0 10px 30px rgba(0,0,0,0.5);
         }
         
-        .warning-header {
-            font-family: 'Playfair Display', serif;
-            color: var(--vermelho);
+        .warning-container {
             text-align: center;
-            margin-bottom: 10px; /* Reduzido para aproximar do ícone */
-            font-size: 2rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
+            margin-bottom: 20px;
         }
         
         .warning-icon {
-            font-size: 2.5rem;
+            font-size: 3.5rem;
             color: var(--vermelho);
             animation: pulse 1.5s infinite;
-            margin-bottom: 0; /* Removido margin inferior */
+            display: block;
+            margin-bottom: 5px; /* Espaço reduzido entre ícone e texto */
+        }
+        
+        .warning-title {
+            font-family: 'Playfair Display', serif;
+            color: var(--vermelho);
+            font-size: 2rem;
+            margin-top: 0;
         }
         
         @keyframes pulse {
@@ -123,8 +124,11 @@
             .alert-card {
                 padding: 20px;
             }
-            .warning-header {
-                font-size: 1.5rem;
+            .warning-title {
+                font-size: 1.7rem;
+            }
+            .warning-icon {
+                font-size: 3rem;
             }
         }
     </style>
@@ -132,9 +136,10 @@
 </head>
 <body>
     <div class="alert-card">
-        <h1 class="warning-header">
-            <span class="warning-icon">⚠️</span> ATENÇÃO
-        </h1>
+        <div class="warning-container">
+            <span class="warning-icon">⚠️</span>
+            <h1 class="warning-title">ATENÇÃO</h1>
+        </div>
         
         <div class="alert-section">
             <p>O NOME DA <span class="highlight">ADVOCACIA NEGRÃO</span> ESTÁ SENDO USADO POR GOLPISTAS.</p>
@@ -165,7 +170,7 @@
             <p>Estamos à disposição para esclarecer qualquer dúvida.</p>
             <p><strong>Dra. Rosangela Negrão</strong></p>
             <p><strong>Dra. Angela Negrão</strong></p>
-            <p><strong>Dra. Joyce Negrão</strong></p>
+            <p><strong>Dra. Joyce Mazzalli</strong></p>
         </div>
     </div>
 </body>
